@@ -11,3 +11,4 @@ prophet
 scikit-learn
 python-dotenv
 pytest
+pdfkit

@@ -1,0 +1,13 @@
+streamlit
+pandas
+plotly
+sqlalchemy
+mysql-connector-python
+boto3
+pymysql
+streamlit-lottie
+streamlit-autorefresh
+prophet
+scikit-learn
+python-dotenv
+pytest

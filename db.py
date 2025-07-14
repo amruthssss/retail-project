@@ -11,11 +11,12 @@ from email.mime.multipart import MIMEMultipart
 import streamlit as st
 
 # ---------- CONFIGURATION ----------
-DB_USER = 'root'
-DB_PASSWORD = os.getenv("DB_PASSWORD", "Amruth%408050")  # use raw password, not URL-encoded
-DB_NAME = 'retail_system'
-DB_HOST = '127.0.0.1'  # localhost for MySQL Workbench
-DB_PORT = 3306
+DB_USER = st.secrets["DB_USER"]
+DB_PASSWORD = st.secrets["DB_PASSWORD"]
+DB_NAME = st.secrets["DB_NAME"]
+DB_HOST = st.secrets["DB_HOST"]
+DB_PORT = st.secrets["DB_PORT"]
+
 
 SES_REGION = 'us-east-1'
 EMAIL_SENDER = os.getenv("EMAIL_SENDER", "amruths604@gmail.com")

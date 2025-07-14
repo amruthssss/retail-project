@@ -15,8 +15,12 @@ from prophet import Prophet
 import numpy as np
 import pdfkit
 
-path_to_wkhtmltopdf = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"  # Update if your path is different
+# Common wkhtmltopdf path in Debian/Ubuntu (used by Streamlit Cloud)
+path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
+
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
+
+pdfkit.from_file('input.html', 'output.pdf', configuration=config)
 
 # --- Page Config ---
 st.set_page_config(page_title="Retail Dashboard", layout="wide")

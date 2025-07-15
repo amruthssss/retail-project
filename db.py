@@ -20,7 +20,7 @@ DB_PORT = 3306
 SES_REGION = 'us-east-1'
 EMAIL_SENDER = os.getenv("EMAIL_SENDER", "amruths604@gmail.com")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "vddywbeuafhopmrw")  # Use an App Password, not your main password!
-EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT", "amruthsharma49@example.com")
+EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT", "amruthsharma49@gmail.com")
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
